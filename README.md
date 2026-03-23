@@ -1,5 +1,7 @@
 # Grimmory
 
+![Grimmory Windows CE client](/images/app.png)
+
 Grimmory is a Windows CE handheld client for ISBN-based book workflows against a Grimmory backend.
 It targets barcode-scanner usage on legacy mobile devices.
 
