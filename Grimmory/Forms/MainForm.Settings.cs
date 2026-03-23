@@ -1,7 +1,8 @@
 using System;
 using System.Windows.Forms;
+using Grimmory.Settings;
 
-namespace Grimmory
+namespace Grimmory.Forms
 {
     // Settings Management Logic
     partial class MainForm

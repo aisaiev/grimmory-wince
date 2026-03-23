@@ -4,9 +4,10 @@ using System.Drawing;
 using System.IO;
 using System.Net;
 using System.Text;
+using Grimmory.Models;
 using Newtonsoft.Json;
 
-namespace Grimmory
+namespace Grimmory.Services
 {
     static class ApiService
     {

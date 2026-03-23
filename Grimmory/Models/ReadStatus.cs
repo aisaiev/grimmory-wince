@@ -1,6 +1,6 @@
 using System;
 
-namespace Grimmory
+namespace Grimmory.Models
 {
     /// <summary>
     /// Read status enumeration

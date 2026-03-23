@@ -1,7 +1,9 @@
 using System.Collections.Generic;
 using System.Drawing;
+using Grimmory.Abstractions;
+using Grimmory.Models;
 
-namespace Grimmory
+namespace Grimmory.Services
 {
     internal sealed class ApiClientAdapter : IApiClient
     {

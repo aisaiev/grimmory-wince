@@ -1,6 +1,7 @@
 using System;
+using Grimmory.Settings;
 
-namespace Grimmory
+namespace Grimmory.Models
 {
     /// <summary>
     /// Helper class for passing login parameters to background threads

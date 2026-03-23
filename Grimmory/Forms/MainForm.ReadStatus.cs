@@ -2,8 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
 using System.Threading;
+using Grimmory.Models;
 
-namespace Grimmory
+namespace Grimmory.Forms
 {
     // Read Status Management Logic
     partial class MainForm

@@ -29,17 +29,20 @@ It targets barcode-scanner usage on legacy mobile devices.
 - `Grimmory.sln` - Visual Studio 2008 solution
 - `Grimmory/Grimmory.csproj` - Windows CE smart-device project (`TargetFrameworkVersion=v3.5`)
 - `Grimmory/Program.cs` - application entry point
-- `Grimmory/MainForm*.cs` - UI split by concern:
-  - `MainForm.Authentication.cs` - login and auto-connect
-  - `MainForm.BookSearch.cs` - ISBN search and create flow
-  - `MainForm.BookCover.cs` - asynchronous cover loading
-  - `MainForm.ReadStatus.cs` - read-status update flow
-  - `MainForm.Tags.cs` - tag rendering and debounced updates
-  - `MainForm.Settings.cs` - settings load/save
-  - `MainForm.UIHelpers.cs` - UI state and invoke helpers
-- `Grimmory/ApiService.cs` - HTTP integration layer
-- `Grimmory/ApiClientAdapter.cs` + `Grimmory/IApiClient.cs` - adapter/abstraction for API calls
-- `Grimmory/AppSettings.cs` + `Grimmory/DeviceCrypto.cs` - local settings and credential encryption
+- `Grimmory/Forms/MainForm*.cs` - UI split by concern:
+  - `Forms/MainForm.Authentication.cs` - login and auto-connect
+  - `Forms/MainForm.BookSearch.cs` - ISBN search and create flow
+  - `Forms/MainForm.BookCover.cs` - asynchronous cover loading
+  - `Forms/MainForm.ReadStatus.cs` - read-status update flow
+  - `Forms/MainForm.Tags.cs` - tag rendering and debounced updates
+  - `Forms/MainForm.Settings.cs` - settings load/save
+  - `Forms/MainForm.UIHelpers.cs` - UI state and invoke helpers
+- `Grimmory/Forms/LoadingForm*.cs` - loading screen form and designer files
+- `Grimmory/Services/ApiService.cs` - HTTP integration layer
+- `Grimmory/Services/ApiClientAdapter.cs` - API adapter implementation
+- `Grimmory/Abstractions/*.cs` - interfaces for service/settings abstractions
+- `Grimmory/Settings/AppSettings.cs` + `Grimmory/Settings/DeviceCrypto.cs` - local settings and credential encryption
+- `Grimmory/Settings/FileSettingsStore.cs` - settings persistence implementation
 - `Grimmory/Models/*.cs` - request/response/result models and helpers
 - `Grimmory/ILMerge/merge_all.bat` - post-build merge script (invokes ILMerge)
 - `Grimmory/ILMerge/ILMerge.exe` - bundled ILMerge tool used by the script

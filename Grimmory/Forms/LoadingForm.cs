@@ -7,7 +7,7 @@ using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Grimmory
+namespace Grimmory.Forms
 {
     public partial class LoadingForm : Form
     {

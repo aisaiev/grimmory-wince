@@ -1,4 +1,4 @@
-﻿namespace Grimmory
+﻿namespace Grimmory.Forms
 {
     partial class MainForm
     {
@@ -42,6 +42,7 @@
             this.authorsLabel = new System.Windows.Forms.Label();
             this.titleTextbox = new System.Windows.Forms.TextBox();
             this.infoPage = new System.Windows.Forms.TabPage();
+            this.tagsLabel = new System.Windows.Forms.Label();
             this.settingsPage = new System.Windows.Forms.TabPage();
             this.connectButton = new System.Windows.Forms.Button();
             this.autoConnectCheckbox = new System.Windows.Forms.CheckBox();
@@ -53,7 +54,6 @@
             this.settingsUserLabel = new System.Windows.Forms.Label();
             this.settingsServerTexbox = new System.Windows.Forms.TextBox();
             this.settingsServerLabel = new System.Windows.Forms.Label();
-            this.tagsLabel = new System.Windows.Forms.Label();
             this.tabControl.SuspendLayout();
             this.mainPage.SuspendLayout();
             this.infoPage.SuspendLayout();
@@ -114,6 +114,8 @@
             // 
             // readStatusCombobox
             // 
+            this.readStatusCombobox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.readStatusCombobox.Location = new System.Drawing.Point(3, 173);
             this.readStatusCombobox.Name = "readStatusCombobox";
             this.readStatusCombobox.Size = new System.Drawing.Size(224, 23);
@@ -167,6 +169,8 @@
             // 
             // titleTextbox
             // 
+            this.titleTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.titleTextbox.Enabled = false;
             this.titleTextbox.Location = new System.Drawing.Point(3, 124);
             this.titleTextbox.Name = "titleTextbox";
@@ -181,6 +185,13 @@
             this.infoPage.Name = "infoPage";
             this.infoPage.Size = new System.Drawing.Size(230, 242);
             this.infoPage.Text = "Info";
+            // 
+            // tagsLabel
+            // 
+            this.tagsLabel.Location = new System.Drawing.Point(0, 0);
+            this.tagsLabel.Name = "tagsLabel";
+            this.tagsLabel.Size = new System.Drawing.Size(50, 20);
+            this.tagsLabel.Text = "Tags";
             // 
             // settingsPage
             // 
@@ -238,6 +249,8 @@
             // 
             // settingsPasswordTextbox
             // 
+            this.settingsPasswordTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.settingsPasswordTextbox.Location = new System.Drawing.Point(3, 121);
             this.settingsPasswordTextbox.Name = "settingsPasswordTextbox";
             this.settingsPasswordTextbox.PasswordChar = '*';
@@ -253,6 +266,8 @@
             // 
             // settingsUserTextbox
             // 
+            this.settingsUserTextbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.settingsUserTextbox.Location = new System.Drawing.Point(3, 72);
             this.settingsUserTextbox.Name = "settingsUserTextbox";
             this.settingsUserTextbox.Size = new System.Drawing.Size(224, 23);
@@ -267,6 +282,8 @@
             // 
             // settingsServerTexbox
             // 
+            this.settingsServerTexbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.settingsServerTexbox.Location = new System.Drawing.Point(3, 23);
             this.settingsServerTexbox.Name = "settingsServerTexbox";
             this.settingsServerTexbox.Size = new System.Drawing.Size(224, 23);
@@ -278,13 +295,6 @@
             this.settingsServerLabel.Name = "settingsServerLabel";
             this.settingsServerLabel.Size = new System.Drawing.Size(54, 20);
             this.settingsServerLabel.Text = "Server";
-            // 
-            // tagsLabel
-            // 
-            this.tagsLabel.Location = new System.Drawing.Point(0, 0);
-            this.tagsLabel.Name = "tagsLabel";
-            this.tagsLabel.Size = new System.Drawing.Size(50, 20);
-            this.tagsLabel.Text = "Tags";
             // 
             // MainForm
             // 

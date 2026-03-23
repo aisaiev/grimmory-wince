@@ -2,7 +2,7 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 
-namespace Grimmory
+namespace Grimmory.Forms
 {
     // UI Helper Methods
     partial class MainForm

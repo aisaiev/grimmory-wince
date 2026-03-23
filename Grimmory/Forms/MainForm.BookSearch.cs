@@ -4,8 +4,10 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
 using System.Threading;
+using Grimmory.Models;
+using Grimmory.Settings;
 
-namespace Grimmory
+namespace Grimmory.Forms
 {
     // Book Search and Creation Logic
     partial class MainForm

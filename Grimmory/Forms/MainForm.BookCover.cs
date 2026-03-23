@@ -3,7 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Threading;
 
-namespace Grimmory
+namespace Grimmory.Forms
 {
     // Book Cover Loading Logic
     partial class MainForm

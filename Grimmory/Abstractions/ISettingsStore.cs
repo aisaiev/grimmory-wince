@@ -1,4 +1,6 @@
-namespace Grimmory
+using Grimmory.Settings;
+
+namespace Grimmory.Abstractions
 {
     internal interface ISettingsStore
     {

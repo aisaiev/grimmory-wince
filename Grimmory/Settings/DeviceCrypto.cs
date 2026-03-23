@@ -5,7 +5,7 @@ using System.Reflection;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace Grimmory
+namespace Grimmory.Settings
 {
     internal static class DeviceCrypto
     {

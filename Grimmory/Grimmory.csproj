@@ -62,50 +62,50 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ApiClientAdapter.cs" />
-    <Compile Include="ApiService.cs" />
-    <Compile Include="AppSettings.cs" />
-    <Compile Include="DeviceCrypto.cs" />
-    <Compile Include="FileSettingsStore.cs" />
-    <Compile Include="IApiClient.cs" />
-    <Compile Include="ISettingsStore.cs" />
-    <Compile Include="LoadingForm.cs">
+    <Compile Include="Services\ApiClientAdapter.cs" />
+    <Compile Include="Services\ApiService.cs" />
+    <Compile Include="Settings\AppSettings.cs" />
+    <Compile Include="Settings\DeviceCrypto.cs" />
+    <Compile Include="Settings\FileSettingsStore.cs" />
+    <Compile Include="Abstractions\IApiClient.cs" />
+    <Compile Include="Abstractions\ISettingsStore.cs" />
+    <Compile Include="Forms\LoadingForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoadingForm.Designer.cs">
+    <Compile Include="Forms\LoadingForm.Designer.cs">
       <DependentUpon>LoadingForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.cs">
+    <Compile Include="Forms\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Designer.cs">
+    <Compile Include="Forms\MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MainForm.Authentication.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainForm.BookCover.cs">
+    <Compile Include="Forms\MainForm.Authentication.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.BookSearch.cs">
+    <Compile Include="Forms\MainForm.BookCover.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.ReadStatus.cs">
+    <Compile Include="Forms\MainForm.BookSearch.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Settings.cs">
+    <Compile Include="Forms\MainForm.ReadStatus.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.Tags.cs">
+    <Compile Include="Forms\MainForm.Settings.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MainForm.UIHelpers.cs">
+    <Compile Include="Forms\MainForm.Tags.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.UIHelpers.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
@@ -116,10 +116,10 @@
     <Compile Include="Models\Responses.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="LoadingForm.resx">
+    <EmbeddedResource Include="Forms\LoadingForm.resx">
       <DependentUpon>LoadingForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MainForm.resx">
+    <EmbeddedResource Include="Forms\MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

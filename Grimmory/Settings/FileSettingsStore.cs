@@ -1,4 +1,6 @@
-namespace Grimmory
+using Grimmory.Abstractions;
+
+namespace Grimmory.Settings
 {
     internal sealed class FileSettingsStore : ISettingsStore
     {

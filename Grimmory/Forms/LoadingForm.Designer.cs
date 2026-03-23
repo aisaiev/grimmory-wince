@@ -1,4 +1,4 @@
-﻿namespace Grimmory
+﻿namespace Grimmory.Forms
 {
     partial class LoadingForm
     {

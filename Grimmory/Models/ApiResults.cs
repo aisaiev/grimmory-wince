@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Grimmory
+namespace Grimmory.Models
 {
     /// <summary>
     /// Base API result class for all API responses

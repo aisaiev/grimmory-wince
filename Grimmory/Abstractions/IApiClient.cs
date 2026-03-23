@@ -1,7 +1,8 @@
 using System.Collections.Generic;
 using System.Drawing;
+using Grimmory.Models;
 
-namespace Grimmory
+namespace Grimmory.Abstractions
 {
     internal interface IApiClient
     {

@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Windows.Forms;
 using System.Threading;
+using Grimmory.Models;
 
-namespace Grimmory
+namespace Grimmory.Forms
 {
     // Tag Management Logic
     partial class MainForm

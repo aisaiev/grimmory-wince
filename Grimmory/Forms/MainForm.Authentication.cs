@@ -1,8 +1,10 @@
 using System;
 using System.Windows.Forms;
 using System.Threading;
+using Grimmory.Models;
+using Grimmory.Settings;
 
-namespace Grimmory
+namespace Grimmory.Forms
 {
     // Authentication and Connection Logic
     partial class MainForm
