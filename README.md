@@ -41,6 +41,8 @@ It targets barcode-scanner usage on legacy mobile devices.
 - `Grimmory/ApiClientAdapter.cs` + `Grimmory/IApiClient.cs` - adapter/abstraction for API calls
 - `Grimmory/AppSettings.cs` + `Grimmory/DeviceCrypto.cs` - local settings and credential encryption
 - `Grimmory/Models/*.cs` - request/response/result models and helpers
+- `Grimmory/ILMerge/merge_all.bat` - post-build merge script (invokes ILMerge)
+- `Grimmory/ILMerge/ILMerge.exe` - bundled ILMerge tool used by the script
 
 ## Requirements
 
@@ -63,6 +65,13 @@ Build output:
 
 - `Grimmory/bin/Debug/`
 - `Grimmory/bin/Release/`
+
+Post-build behavior:
+
+- `Grimmory.csproj` runs `Grimmory/ILMerge/merge_all.bat` after build.
+- The script merges the main executable with `bin/<Configuration>/*.dll`.
+- For `Debug`, merged output is written to `bin/Debug/Output/`.
+- For `Release`, merged output replaces the original executable in `bin/Release/Output/` and `.dll/.pdb/.xml` files in that folder are removed by the script.
 
 ## Runtime Setup
 

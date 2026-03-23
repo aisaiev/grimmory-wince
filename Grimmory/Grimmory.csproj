@@ -150,4 +150,7 @@
   <Target Name="AfterBuild">
   </Target>
   -->
+  <PropertyGroup>
+    <PostBuildEvent>"$(SolutionDir)Grimmory\ILMerge\merge_all.bat" "$(SolutionDir)Grimmory\" "$(TargetPath)" $(ConfigurationName)</PostBuildEvent>
+  </PropertyGroup>
 </Project>
